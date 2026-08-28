@@ -1,0 +1,77 @@
+# Backend / Maven
+backend/target/
+**/target/
+
+# Frontend / Node
+frontend/node_modules/
+**/node_modules/
+frontend/dist/
+**/dist/
+frontend/.angular/
+.angular/
+
+# Tests / Cypress
+frontend/cypress/screenshots/
+frontend/cypress/videos/
+frontend/cypress/downloads/
+coverage/
+**/coverage/
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+application-local.yml
+
+# IDEs
+.idea/
+*.iml
+
+# Keep only the shareable VS Code extension recommendations
+.vscode/*
+**/.vscode/*
+!.vscode/extensions.json
+!**/.vscode/extensions.json
+
+# Eclipse / STS
+.project
+.classpath
+.settings/
+.factorypath
+.springBeans
+.sts4-cache/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Certificates and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# Database exports and local volumes
+*.dump
+*.backup
+*.bak
+postgres-data/
+pgdata/
+
+# Other generated artifacts
+*.pid

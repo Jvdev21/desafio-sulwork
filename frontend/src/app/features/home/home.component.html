@@ -1,0 +1,63 @@
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="hero-copy">
+    <span class="eyebrow">Bem-vindo</span>
+    <h1 id="home-title">Café da Manhã MV</h1>
+    <p>Organize os cafés da equipe com praticidade e sem conflitos.</p>
+    <div class="hero-actions">
+      <a mat-flat-button routerLink="/cafes">Ver cafés da manhã</a>
+      <a mat-button routerLink="/colaboradores">Ver colaboradores</a>
+    </div>
+  </div>
+  <div class="hero-coffee" aria-hidden="true">
+    <span class="steam steam-left"></span>
+    <span class="steam steam-right"></span>
+    <mat-icon>coffee</mat-icon>
+    <i></i><i></i><i></i>
+  </div>
+</section>
+
+<section class="access-section" aria-labelledby="access-title">
+  <div class="section-heading">
+    <span class="eyebrow">Acessos principais</span>
+    <h2 id="access-title">Por onde você quer começar?</h2>
+  </div>
+  <div class="access-grid">
+    <mat-card class="access-card interactive-card">
+      <div class="access-icon collaborators"><mat-icon>groups</mat-icon></div>
+      <div>
+        <span class="card-kicker">Pessoas</span>
+        <h3>Colaboradores</h3>
+        <p>Cadastre e gerencie as pessoas que participarão dos cafés da manhã.</p>
+      </div>
+      <a mat-flat-button routerLink="/colaboradores" data-cy="home-colaboradores">Ver colaboradores <mat-icon>arrow_forward</mat-icon></a>
+    </mat-card>
+
+    <mat-card class="access-card interactive-card cafe-card">
+      <div class="access-icon cafes"><mat-icon>free_breakfast</mat-icon></div>
+      <div>
+        <span class="card-kicker">Encontros</span>
+        <h3>Cafés da manhã</h3>
+        <p>Organize os encontros, participantes e itens que cada colaborador levará.</p>
+      </div>
+      <a mat-flat-button routerLink="/cafes" data-cy="home-cafes">Ver cafés da manhã <mat-icon>arrow_forward</mat-icon></a>
+    </mat-card>
+  </div>
+</section>
+
+<section class="workflow" aria-labelledby="workflow-title">
+  <div class="section-heading">
+    <span class="eyebrow">Fluxo simples</span>
+    <h2 id="workflow-title">Do cadastro ao café servido</h2>
+    <p>Em cinco passos, a equipe combina tudo sem repetir itens ou perder informações.</p>
+  </div>
+  <div class="steps-grid">
+    @for (passo of passos; track passo.numero) {
+      <article class="step-card">
+        <span class="step-number">{{ passo.numero }}</span>
+        <div class="step-icon"><mat-icon>{{ passo.icone }}</mat-icon></div>
+        <h3>{{ passo.titulo }}</h3>
+        <p>{{ passo.texto }}</p>
+      </article>
+    }
+  </div>
+</section>

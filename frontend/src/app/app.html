@@ -1,0 +1,21 @@
+<aside class="app-sidebar">
+  <a class="sidebar-brand brand" routerLink="/" aria-label="Ir para o início">
+    <img src="assets/mv-logo-oficial.png" alt="Logo MV" />
+    <strong>Café da Manhã MV</strong>
+  </a>
+  <nav aria-label="Navegação principal">
+    <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-cy="nav-inicio"><mat-icon>home</mat-icon><span>Início</span></a>
+    <a mat-button routerLink="/colaboradores" routerLinkActive="active"><mat-icon>group</mat-icon><span>Colaboradores</span></a>
+    <a mat-button routerLink="/cafes" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }"><mat-icon>free_breakfast</mat-icon><span>Cafés da manhã</span></a>
+  </nav>
+  <div class="sidebar-coffee" aria-hidden="true"><span class="steam steam-one"></span><span class="steam steam-two"></span><mat-icon>coffee</mat-icon><i></i><i></i><i></i></div>
+  <div class="sidebar-quote"><strong>Que tal um café?</strong><span>Pequenos encontros fazem grandes equipes.</span><mat-icon>favorite_border</mat-icon></div>
+</aside>
+
+<div class="app-shell">
+  <header class="top-header">
+    <div class="top-brand"><img src="assets/mv-logo-oficial.png" alt="Logo MV" /><span><strong>Café da Manhã MV</strong><small>Organize os cafés da equipe com praticidade</small></span></div>
+    <div class="header-coffee" aria-hidden="true"><span></span><mat-icon>coffee</mat-icon></div>
+  </header>
+  <main class="app-content"><router-outlet /></main>
+</div>
